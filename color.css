@@ -1,0 +1,37 @@
+/*
+https://s9a.page/snooze enhanced color enchants
+*/
+
+:root {
+  --lawn: rgb(90, 210, 90);
+  --moss: rgb(120, 210, 210);
+  --punk: rgb(270, 120, 330);
+  --pulp: rgb(180, 90, 240);
+  --pour: rgb(90, 150, 240);
+  --rain: rgb(90, 180, 270);
+  --volt: rgb(240, 240, 30);
+  --jupe: rgb(240, 180, 30);
+  --wind: rgb(150, 210, 240);
+  --ink: rgb(30, 30, 20);
+}
+
+.hue {
+	--hue: orange;
+  background: var(--hue);
+  color: var(--ink);
+}
+
+.lawn { --hue: var(--lawn) }
+.moss { --hue: var(--moss) }
+.punk { --hue: var(--punk) }
+.pulp { --hue: var(--pulp) }
+.pour { --hue: var(--pour) }
+.rain { --hue: var(--rain) }
+.volt { --hue: var(--volt) }
+.jupe { --hue: var(--jupe) }
+.wind { --hue: var(--wind) }
+
+::selection {
+	background: var(--ink);
+	color: var(--hue);
+}
