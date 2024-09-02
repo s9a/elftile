@@ -5,6 +5,7 @@
 
   function elf(n) {
     var e, d, m
+    n = +n
     e = n * 360 / 11
     e = fix(e)
     
