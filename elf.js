@@ -7,6 +7,8 @@
     var e, d, m
     n = +n
     e = n * 360 / 11
+    e = fix(e)
+    
     if (this instanceof elf) {
       this.n = n
       this.elf = e
@@ -15,7 +17,15 @@
       this.txt = d + "º" + round(m) + "'"
       return this
     }
+
     return e
+  }
+  
+  function fix(n) {
+    n = n.toFixed(13)
+    n += ""
+    n = n.slice(0, -1)
+    return +n
   }
   
   function deg(flute) {
@@ -30,6 +40,7 @@
     return (new elf(n)).txt
   }
   
+  elf.fix = fix
   elf.deg = deg
   elf.min = min
   elf.txt = txt
